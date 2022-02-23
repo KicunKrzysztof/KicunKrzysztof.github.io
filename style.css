@@ -1,0 +1,124 @@
+body {
+    background-color: #0e141b;
+    color: #ffffff;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+html, body {
+    --nav-height: 100px;
+    height: 100%;
+    margin: 0;
+}
+a {
+    color: #818a91;
+    transition-duration: 300ms;
+    text-decoration: none;
+}
+a:hover {
+    color: #ff5277;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: var(--nav-height);
+    margin: 0;
+    background-color: rgba(14, 20, 27, 0.9);
+    font-size: 1.7em;
+    letter-spacing: 0.2em;
+    font-family: Noe Display,Georgia,Times,serif;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: auto auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+article {
+    padding: var(--nav-height) 0 0 0;
+    height: calc(100% - var(--nav-height));
+    width: 80%;
+    margin: 0 auto;
+}
+.border {
+    border-top: 5px solid #43a9a3;
+    height: calc(100% - 40px);
+}
+.right {
+    border-right: 5px solid #43a9a3;
+}
+.left {
+    border-left: 5px solid #43a9a3;
+}
+.text {
+    margin: auto 2em;
+    border: none;
+    text-align: center;
+    font-size: larger;
+}
+
+#inner-home {
+    display: grid;
+    grid-template: auto / 7fr 3fr;
+}
+#home-text {
+    grid-area: 1 / 1 / 2 / 2;
+}
+#my-photo {
+    grid-area: 1 / 2 / 2 / 3;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto auto;
+}
+
+#inner-about {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+}
+#about-text {
+    grid-area: 1 / 2 / 2 / 3;
+}
+#mountain-photo {
+    grid-area: 1 / 1 / 2 / 2;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto auto;
+}
+
+#inner-work {
+    display: grid;
+    grid-template: auto / 7fr 3fr;
+}
+#work-text {
+    grid-area: 1 / 1 / 2 / 2;
+}
+#work-photo {
+    grid-area: 1 / 2 / 2 / 3;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto auto;
+}
+
+#inner-contact{
+    text-align: center;
+    font-size: larger;
+}
+#inner-contact ul {
+    list-style: none;
+    padding: 0;
+}
+#inner-contact li {
+    margin: 1.5em 0;
+}
+
+footer {
+    font-size: smaller;
+}

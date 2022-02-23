@@ -1,0 +1,4 @@
+Home        strona główna
+About       coś o mnie
+Work        portfolio TODO i o pracy i aktualnych studiach
+Contact     kontakt mail, link do linkedin, link do github, cv
